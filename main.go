@@ -170,14 +170,14 @@ db.users_comments.remove();
 // setup sample data - wouldn't actually use this in production
 db.users.remove();
 db.posts.remove();
-db.users.save({ID: ID[0]._id, Name:"Ross",email:"S@gmail.com",password:"password1"});
-db.users.save({ID: ID[1]._id, Name:"Chandler" ,email:"Stm@gmail.com",password:"password2"});
-db.users.save({ID: ID[2]._id, Name:"Monica",email:"mello@gmail.com",password:"password3"});
+db.users.save({ID: ID[0]._id, Name:"Rachel",email:"rach@gmail.com",password:"qwerty"});
+db.users.save({ID: ID[1]._id, Name:"Ross" ,email:"centralperk@gmail.com",password:"qwertyuiop"});
+db.users.save({ID: ID[2]._id, Name:"Phoebe",email:"hellogm@gmail.com",password:"asdfghjkl"});
 
 var users = db.users.find();
-db.posts.save({ID: ID[0]._id, caption: "caption one", Image_URL="https://www.lovesove.com/wp-content/uploads/2018/07/har-bat-ke-jabab-me-muskura-hi-achchha-he-Attitude-Lines-in-hindi-Attitude-status-Attitude-quotes-lovesove.jpg" ,created: new ISODate()});
-db.posts.save({ID: ID[1]._id, caption: "caption two", Image_URL="https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg",created: new ISODate()});
-db.posts.save({ID: ID[2]._id, caption: "caption three", Image_URL="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg",created: new ISODate()});
+db.posts.save({ID: ID[0]._id, caption: "this is my caption one", Image_URL="https://www.lovesove.com/wp-content/uploads/2018/07/har-bat-ke-jabab-me-muskura-hi-achchha-he-Attitude-Lines-in-hindi-Attitude-status-Attitude-quotes-lovesove.jpg" ,created: new ISODate()});
+db.posts.save({ID: ID[1]._id, caption: "this is my caption two", Image_URL="https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg",created: new ISODate()});
+db.posts.save({ID: ID[2]._id, caption: "this is my caption three", Image_URL="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg",created: new ISODate()});
 // end sample data setup
 
 mapUsers = function() {
